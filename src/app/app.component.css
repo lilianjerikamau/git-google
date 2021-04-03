@@ -2,5 +2,5 @@ a {
   margin: 20px;
 }
 .app-component {
-  background-image: url("/src/assets/Top\ 6\ Tumblr\ Blogs\ for\ Photography\ Lovers.jpeg");
+  background-image: url("src/assets/background.jpeg");
 }
