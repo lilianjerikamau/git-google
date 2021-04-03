@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { GithubAppComponent } from './github-app.component';
 
 describe('GithubAppComponent', () => {
