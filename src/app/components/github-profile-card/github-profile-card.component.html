@@ -1,0 +1,16 @@
+<mat-card class="user-avatar">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title><span></span> {{ githubProfile.name }} </mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="githubProfile.avatar_url" alt="" />
+  <mat-card-content>
+    <span></span>
+    <p>{{ githubProfile.bio }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a [href]="githubProfile.html_url" target="_blank"
+      ><button mat-raised-button color="primary">Profile</button></a
+    >
+  </mat-card-actions>
+</mat-card>
