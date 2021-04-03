@@ -1,0 +1,49 @@
+<mat-card class="Repo">
+  <mat-card-header>
+    <mat-card-title class="title">Github Repositories</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list role="list" fxLayout="row" class="justify-content-between">
+      <mat-list-item
+        class="repo"
+        role="listitem"
+        *ngFor="let repo of githubRepos"
+        role="listitem"
+      >
+        <h4 matLine>
+          <a href="repo.html_url" target="_blank"> {{ repo.name }}</a>
+        </h4>
+        <mat-divider></mat-divider>
+        <span
+          ><button
+            matLine
+            mat-raised-button
+            color="primary"
+            matBadge=""
+            matBadgePosition="before"
+            matBadgeColor="accent"
+            mat-label="Repos"
+          >
+            {{ repo.stargazers_count }}
+            <span>Stars</span>
+          </button></span
+        >
+        <hr />
+        <span
+          ><button
+            matLine
+            mat-raised-button
+            color="accent"
+            matBadge=""
+            matBadgePosition="before"
+            matBadgeColor="accent"
+            mat-label="Repos"
+          >
+            {{ repo.watchers_count }}
+            <span>Stars</span>
+          </button></span
+        >
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
