@@ -44,22 +44,40 @@
       <mat-list role="list">
         <mat-list-item role="listitem">
           <span>User Name:</span
-          ><span class="bold">{{ githubProfile.name }}</span>
+          ><span class="bold">{{
+            githubProfile.name | replaceNullWithText: "User did not provide"
+          }}</span>
         </mat-list-item>
         <mat-list-item role="listitem">
-          <span>Location:</span>{{ githubProfile.location }}
+          <span>Location:</span
+          >{{
+            githubProfile.location
+              | replaceNullWithText: "User did not provide location"
+          }}
         </mat-list-item>
         <mat-list-item role="listitem">
-          <span>Email:</span>{{ githubProfile.email }}
+          <span>Email:</span
+          >{{
+            githubProfile.email
+              | replaceNullWithText: "User did not provide email"
+          }}
         </mat-list-item>
         <mat-list-item role="listitem">
           <a [href]="githubProfile.company" target="_blank"
-            ><span>Company:</span>{{ githubProfile.company }}</a
+            ><span>Company:</span
+            >{{
+              githubProfile.company
+                | replaceNullWithText: "User did not provide company"
+            }}</a
           >
         </mat-list-item>
         <mat-list-item role="listitem">
           <a [href]="githubProfile.blog" target="_blank"
-            ><span>Blog:</span>{{ githubProfile.blog }}</a
+            ><span>Blog:</span
+            >{{
+              githubProfile.blog
+                | replaceNullWithText: "User did not provide blog link"
+            }}</a
           >
         </mat-list-item>
 

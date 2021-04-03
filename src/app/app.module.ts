@@ -13,6 +13,7 @@ import { MaterialModule } from './shared/material/material.module';
 import { GithubReposComponent } from './components/github-repos/github-repos.component';
 import { FormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { ReplaceNullWithTextPipe } from './replace-null-with-text.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     GithubAppComponent,
     GithubProfileCardComponent,
     GithubProfileDataComponent,
-    GithubReposComponent
+    GithubReposComponent,
+     ReplaceNullWithTextPipe,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +32,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     MaterialModule,
     FormsModule,
     NgxSpinnerModule,
+  
 
   ],
   providers: [],
