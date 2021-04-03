@@ -37,7 +37,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Live Link
 
-Here is a live link for the application [https://lilianjerikamau.github.io/git-google/]
+Here is a live link for the application [https://lilianjerikamau.github.io/github-user-search/]
 
 ## Contact
 
