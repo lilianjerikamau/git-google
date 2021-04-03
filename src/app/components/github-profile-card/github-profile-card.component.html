@@ -3,7 +3,12 @@
     <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title><span></span> {{ githubProfile.name }} </mat-card-title>
   </mat-card-header>
-  <img mat-card-image [src]="githubProfile.avatar_url" alt="" />
+  <img
+    mat-card-image
+    [src]="githubProfile.avatar_url"
+    default="https://www.google.com/imgres?imgurl=https%3A%2F%2Ftwirpz.files.wordpress.com%2F2015%2F06%2Ftwitter-avi-gender-balanced-figure.png%3Fw%3D640&imgrefurl"
+    alt=""
+  />
   <mat-card-content>
     <span></span>
     <p>{{ githubProfile.bio }}</p>

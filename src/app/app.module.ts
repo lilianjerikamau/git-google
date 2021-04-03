@@ -14,6 +14,8 @@ import { GithubReposComponent } from './components/github-repos/github-repos.com
 import { FormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { ReplaceNullWithTextPipe } from './replace-null-with-text.pipe';
+import { ImagePreloadDirective } from './image-preload.directive';
+import { HoverDirective } from './hover.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,9 @@ import { ReplaceNullWithTextPipe } from './replace-null-with-text.pipe';
     GithubProfileCardComponent,
     GithubProfileDataComponent,
     GithubReposComponent,
-     ReplaceNullWithTextPipe,
+    ReplaceNullWithTextPipe,
+    ImagePreloadDirective,
+      HoverDirective,
   ],
   imports: [
     BrowserModule,

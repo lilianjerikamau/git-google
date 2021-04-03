@@ -11,7 +11,9 @@
         role="listitem"
       >
         <h4 matLine>
-          <a href="repo.html_url" target="_blank"> {{ repo.name }}</a>
+          <a [href]="repo.html_url" target="_blank" appHover>
+            {{ repo.name }}</a
+          >
         </h4>
         <mat-divider></mat-divider>
         <span
