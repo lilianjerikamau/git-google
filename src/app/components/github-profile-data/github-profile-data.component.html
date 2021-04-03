@@ -1,0 +1,77 @@
+<div class="container-fluid">
+  <mat-card class="profile-data">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <button
+        mat-raised-button
+        color="primary"
+        matBadge=" {{ githubProfile.followers }} "
+        matBadgePosition="before"
+        matBadgeColor="accent"
+      >
+        {{ githubProfile.followers }} <span>Followers</span>
+      </button>
+      <button
+        mat-raised-button
+        color="primary"
+        matBadge=" {{ githubProfile.public_repos }}"
+        matBadgePosition="before"
+        matBadgeColor="accent"
+        mat-label="Repos"
+      >
+        {{ githubProfile.public_repos }} <span>Repos</span>
+      </button>
+      <button
+        mat-raised-button
+        color="primary"
+        matBadge="{{ githubProfile.public_gists }} "
+        matBadgeColor="accent"
+        matBadgePosition="before"
+      >
+        {{ githubProfile.public_gists }} <span>Gist</span>
+      </button>
+      <button
+        mat-raised-button
+        color="primary"
+        matBadge=" {{ githubProfile.following }}"
+        matBadgePosition="before"
+        matBadgeColor="accent"
+      >
+        {{ githubProfile.following }} <span>Following</span>
+      </button>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-list role="list">
+        <mat-list-item role="listitem">
+          <span>User Name:</span
+          ><span class="bold">{{ githubProfile.name }}</span>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <span>Location:</span>{{ githubProfile.location }}
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <span>Email:</span>{{ githubProfile.email }}
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <a [href]="githubProfile.company" target="_blank"
+            ><span>Company:</span>{{ githubProfile.company }}</a
+          >
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <a [href]="githubProfile.blog" target="_blank"
+            ><span>Blog:</span>{{ githubProfile.blog }}</a
+          >
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+          <a [href]="githubProfile.html_url" target="_blank"
+            ><span>Profile Url:</span>{{ githubProfile.html_url }}</a
+          >
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <span>Member Since:</span> {{ githubProfile.created_at | date }}
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+</div>
