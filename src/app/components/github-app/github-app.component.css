@@ -8,3 +8,6 @@ input {
   background-color: mediumturquoise;
   color: black;
 }
+.app-component {
+  background-image: url("src/assets/background.jpeg");
+}

@@ -11,10 +11,10 @@ import { GithubAppComponent } from './components/github-app/github-app.component
 
 const routes: Routes = [
   // { path: 'home', component: GithubAppComponent },
-  // { path: 'user-profile-data', component: GithubProfileDataComponent },
-  //  { path: 'user-profile-card', component: GithubProfileCardComponent },
-  // {path:'user-repos', component: GithubReposComponent},
-  // { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'user-profile-data', component: GithubProfileDataComponent },
+   { path: 'user-profile-card', component: GithubProfileCardComponent },
+  {path:'user-repos', component: GithubReposComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 
 ];
 

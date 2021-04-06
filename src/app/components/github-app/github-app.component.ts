@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { GithubServiceService } from 'src/app/services/github-service.service';
-
+import { UserProfile } from 'src/app/classes/user-profile';
+import { UserRepos } from 'src/app/classes/user-repos';
 @Component({
   selector: 'app-github-app',
   templateUrl: './github-app.component.html',
@@ -9,10 +10,12 @@ import { GithubServiceService } from 'src/app/services/github-service.service';
 })
 export class GithubAppComponent implements OnInit {
 
-  public githubUserQuery: string;
-  public githubProfile: any;
-  public githubRepos: any[];
-  public errorMessage: string;
+  // public githubUserQuery: UserRepos;
+   public githubUserQuery: UserProfile;
+  public githubProfile: UserProfile;
+  public githubRepos: UserRepos[];
+ 
+  public errorMessage:string;
 
 
   constructor(private githubService: GithubServiceService, private ngxSpinner: NgxSpinnerService) { }
