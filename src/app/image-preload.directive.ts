@@ -5,8 +5,10 @@ import { Directive, Input, HostBinding } from '@angular/core';
    host: {
       '(error)':'updateUrl()',
       '(load)': 'load()',
-      '[src]':'src'
-     }
+     '[src]': 'src'
+      
+   }
+   
 })
 export class ImagePreloadDirective {
    @Input() src:string;
