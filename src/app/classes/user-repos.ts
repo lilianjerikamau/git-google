@@ -1,6 +1,6 @@
 export class UserRepos {
     
-    //  public githubRepos: any[];
+     public githubRepos: any[];
 
 
    
